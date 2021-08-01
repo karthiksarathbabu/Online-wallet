@@ -1,0 +1,16 @@
+
+
+
+*.orig
+*.log
+*.pot
+*.pyc 
+*/*.pyc 
+
+
+migrations
+
+….vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
