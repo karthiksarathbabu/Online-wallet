@@ -17,7 +17,7 @@ class AbstractBase(models.Model):
 
 class Customer(AbstractBase):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.OneToOneField(User,on_delete=models.CASCADE,related_name="customer_profile",null=True,blank=True)
+    user = models.OneToOneField(User,on_delete=models.CASCADE,related_name="customer_profile")
     is_active = models.BooleanField(default=False)
     
     class Meta:
